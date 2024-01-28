@@ -47,7 +47,7 @@ def create_edit_and_build_spec(plan, service_name, image, chain_name, command, b
 
     plan.store_service_files(service_name=service_name, src="/tmp/{0}.json".format(chain_name), name=service_name)
 
-    plan.remove_service(service_name)
+    # plan.remove_service(service_name)
 
     return service
 
